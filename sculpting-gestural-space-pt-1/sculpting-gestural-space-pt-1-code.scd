@@ -5,15 +5,15 @@ This document contains code for the Scultping Gestural Space Using Envelopes Par
 (c) scott petersen 2021
 */
 
-/*
+// Ex 1a -- Linear Ramp (up-down) plot
 
-Using Plotter with editMode = true to easily create custom arrays for amplitudes or frequencies. Here, we use it to generate a series of harmonic partials.
+Env([0,1,0], [0.5,0.5]).plot
 
-*/
-
-// Ex 1 -- curves
+// Ex 1b -- curves
 
 [ Env([0,1], 1, 'lin'), Env([0,1], 1, 'sine'), Env([0,1], 1, 4), Env([0,1], 1, -4) ].plot("curves");
+
+/* Using Plotter with editMode = true to easily create custom arrays for amplitudes or frequencies. Here, we use it to generate a series of harmonic partials.*/
 
 // Ex. 2 -- plotter
 a = (0..40).plot; // create a Plotter object
